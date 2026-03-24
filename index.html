@@ -7,9 +7,9 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230066FF'/><text y='.9em' font-size='72' x='12' fill='white' font-family='system-ui' font-weight='900'>B</text></svg>"/>
 <style>
 :root{
-  --accent:#0066FF;--accent2:#00C2FF;
-  --bg:#F7F8FC;--bg2:#FFFFFF;
-  --text:#0A0E1A;--muted:#5A6180;--border:#DDE2F0;
+  --accent:#4D8EFF;--accent2:#00C2FF;
+  --bg:#0D1117;--bg2:#161B22;--bg3:#1C2333;
+  --text:#E6EDF3;--muted:#8B949E;--border:#30363D;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -21,12 +21,12 @@ a{color:inherit;text-decoration:none;}
 .blueprint-bg{position:relative;}
 .blueprint-bg::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='120' height='120' fill='none'/%3E%3Cpath d='M20 20 L60 5 L100 20 L100 80 L60 95 L20 80 Z' stroke='%230066FF' stroke-width='.5' fill='none' opacity='.06'/%3E%3Cline x1='60' y1='5' x2='60' y2='95' stroke='%230066FF' stroke-width='.4' stroke-dasharray='3,3' opacity='.05'/%3E%3Crect x='40' y='40' width='40' height='30' stroke='%230066FF' stroke-width='.4' fill='none' opacity='.06'/%3E%3C/svg%3E");background-size:120px 120px;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;background:rgba(247,248,252,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .nav-logo{font-weight:900;font-size:1.15rem;letter-spacing:-0.5px;}
 .nav-logo span{color:var(--accent);}
-.nav-badge{font-size:.72rem;font-weight:700;color:var(--accent);background:rgba(0,102,255,.08);border:1px solid rgba(0,102,255,.15);padding:.3rem .8rem;border-radius:999px;letter-spacing:.5px;text-transform:uppercase;}
+.nav-badge{font-size:.72rem;font-weight:700;color:var(--accent);background:rgba(77,142,255,.1);border:1px solid rgba(77,142,255,.2);padding:.3rem .8rem;border-radius:999px;letter-spacing:.5px;text-transform:uppercase;}
 .nav-cta{background:var(--accent);color:#fff;font-weight:800;padding:.5rem 1.3rem;border-radius:6px;font-size:.88rem;transition:.2s;}
-.nav-cta:hover{background:#0052cc;}
+.nav-cta:hover{background:#3a7aee;}
 
 /* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:7rem 1.5rem 5rem;position:relative;overflow:hidden;}
@@ -55,16 +55,16 @@ h2.st{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-1px;m
 .section-intro{color:var(--muted);font-size:.97rem;max-width:560px;}
 
 /* WHAT — minimal strip */
-.what-strip{background:#fff;padding:3.5rem 1.5rem;border-bottom:1px solid var(--border);}
+.what-strip{background:var(--bg2);padding:3.5rem 1.5rem;border-bottom:1px solid var(--border);}
 .what-strip-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;}
 .ws-block{display:flex;gap:.85rem;align-items:flex-start;}
 .ws-icon{font-size:1.5rem;flex-shrink:0;}
-.ws-block h4{font-weight:800;font-size:.9rem;margin-bottom:.2rem;}
+.ws-block h4{font-weight:800;font-size:.9rem;margin-bottom:.2rem;color:var(--text);}
 .ws-block p{color:var(--muted);font-size:.8rem;line-height:1.45;}
 .partner-bar{max-width:900px;margin:2.5rem auto 0;padding-top:2rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
 
 /* WHY */
-.why{padding:5rem 1.5rem;background:var(--bg);}
+.why{padding:5rem 1.5rem;background:#161B22;}
 .why-inner{max-width:900px;margin:0 auto;}
 .why-top{margin-bottom:2.5rem;}
 .why-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;}
@@ -104,13 +104,13 @@ h2.st{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-1px;m
 .emotional-inner p.small{font-size:.95rem;color:rgba(255,255,255,.55);max-width:480px;margin:0 auto;}
 
 /* AUDIENCE */
-.audience{padding:5rem 1.5rem;background:#fff;}
+.audience{padding:5rem 1.5rem;background:var(--bg);}
 .audience-inner{max-width:900px;margin:0 auto;}
 .aud-top{margin-bottom:2.5rem;}
 .aud-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
-.aud-seg{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;gap:1.25rem;align-items:flex-start;}
+.aud-seg{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;gap:1.25rem;align-items:flex-start;}
 .aud-pct{font-size:2.2rem;font-weight:900;color:var(--accent);line-height:1;flex-shrink:0;letter-spacing:-1px;}
-.aud-seg-label{font-weight:800;font-size:.92rem;margin-bottom:.2rem;}
+.aud-seg-label{font-weight:800;font-size:.92rem;margin-bottom:.2rem;color:var(--text);}
 .aud-seg-desc{font-size:.8rem;color:var(--muted);line-height:1.45;}
 
 /* HOW IT WORKS */
@@ -122,34 +122,33 @@ h2.st{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-1px;m
 .how-step{text-align:center;position:relative;z-index:1;padding:0 .5rem;}
 .how-num{width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;font-weight:900;font-size:1.1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 16px rgba(0,102,255,.3);}
 .how-step:last-child .how-num{background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 4px 20px rgba(0,194,255,.4);}
-.how-step h4{font-weight:800;font-size:.88rem;margin-bottom:.3rem;line-height:1.3;}
+.how-step h4{font-weight:800;font-size:.88rem;margin-bottom:.3rem;line-height:1.3;color:var(--text);}
 .how-step p{font-size:.78rem;color:var(--muted);line-height:1.4;}
 .how-step:last-child h4{color:var(--accent);}
 
 /* CREDIBILITY */
-.cred{padding:5rem 1.5rem;background:#fff;}
+.cred{padding:5rem 1.5rem;background:var(--bg2);}
 .cred-inner{max-width:900px;margin:0 auto;}
 .cred-top{margin-bottom:2.5rem;}
 .cred-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2.5rem;}
-.cred-stat{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-align:center;}
-.cred-num{font-size:2.4rem;font-weight:900;line-height:1;margin-bottom:.25rem;letter-spacing:-1px;}
+.cred-stat{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-align:center;}
+.cred-num{font-size:2.4rem;font-weight:900;line-height:1;margin-bottom:.25rem;letter-spacing:-1px;color:var(--text);}
 .cred-num span{color:var(--accent);}
 .cred-lbl{font-size:.8rem;color:var(--muted);font-weight:600;line-height:1.4;}
-.cred-logos{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:1.75rem;display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;justify-content:center;}
+.cred-logos{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:1.75rem;display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;justify-content:center;}
 .cred-logos-label{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:600;width:100%;text-align:center;margin-bottom:.4rem;}
-.logo-pill{background:#fff;border:1px solid var(--border);border-radius:8px;padding:.4rem 1rem;font-size:.82rem;font-weight:700;color:var(--muted);}
+.logo-pill{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.4rem 1rem;font-size:.82rem;font-weight:700;color:var(--muted);}
 
 /* PACKAGES */
 .packages{padding:5rem 1.5rem;background:var(--bg);}
 .pkg-inner{max-width:1000px;margin:0 auto;}
-.pkg-top{margin-bottom:2.5rem;}
-.pkg-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;align-items:start;}
-.pkg-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:2rem;position:relative;transition:.2s;}
-.pkg-card:hover{box-shadow:0 12px 40px rgba(0,102,255,.1);}
-.pkg-card.featured{border-color:var(--accent);box-shadow:0 8px 32px rgba(0,102,255,.15);}
+.pkg-top{margin-bottom:2.5rem;}.pkg-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;align-items:start;}
+.pkg-card{background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:2rem;position:relative;transition:.2s;}
+.pkg-card:hover{box-shadow:0 12px 40px rgba(77,142,255,.1);}
+.pkg-card.featured{border-color:var(--accent);box-shadow:0 8px 32px rgba(77,142,255,.2);}
 .pkg-rec{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:.65rem;font-weight:800;padding:.25rem .9rem;border-radius:999px;letter-spacing:.5px;white-space:nowrap;}
 .pkg-name{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:var(--muted);margin-bottom:.5rem;}
-.pkg-price{font-size:2.6rem;font-weight:900;letter-spacing:-1.5px;line-height:1;margin-bottom:.25rem;}
+.pkg-price{font-size:2.6rem;font-weight:900;letter-spacing:-1.5px;line-height:1;margin-bottom:.25rem;color:var(--text);}
 .pkg-price sup{font-size:1rem;vertical-align:top;margin-top:.5rem;font-weight:700;}
 .pkg-desc{font-size:.83rem;color:var(--muted);margin-bottom:1.25rem;line-height:1.5;}
 .pkg-divider{border:none;border-top:1px solid var(--border);margin:1.25rem 0;}
@@ -157,23 +156,23 @@ h2.st{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-1px;m
 .pkg-list li{font-size:.83rem;color:var(--muted);display:flex;gap:.55rem;align-items:flex-start;line-height:1.4;}
 .pkg-list li::before{content:'✓';color:var(--accent);font-weight:900;flex-shrink:0;}
 .pkg-list li.hl{color:var(--muted);font-weight:400;}
-.pkg-btn{display:block;text-align:center;background:var(--bg);color:var(--accent);font-weight:800;padding:.85rem;border-radius:8px;font-size:.9rem;border:1.5px solid var(--border);transition:.2s;}
-.pkg-btn:hover{border-color:var(--accent);background:rgba(0,102,255,.04);}
+.pkg-btn{display:block;text-align:center;background:var(--bg3);color:var(--accent);font-weight:800;padding:.85rem;border-radius:8px;font-size:.9rem;border:1.5px solid var(--border);transition:.2s;}
+.pkg-btn:hover{border-color:var(--accent);background:rgba(77,142,255,.08);}
 .pkg-card.featured .pkg-btn{background:var(--accent);color:#fff;border-color:var(--accent);}
-.pkg-card.featured .pkg-btn:hover{background:#0052cc;}
+.pkg-card.featured .pkg-btn:hover{background:#3a7aee;}
 
 /* COMPARISON */
-.comparison{padding:3rem 1.5rem 5rem;background:#fff;}
+.comparison{padding:3rem 1.5rem 5rem;background:var(--bg2);}
 .cmp-inner{max-width:900px;margin:0 auto;}
 .cmp-top{margin-bottom:1.5rem;}
 .cmp-table{width:100%;border-collapse:collapse;border-radius:14px;overflow:hidden;border:1px solid var(--border);}
-.cmp-table th{padding:.9rem 1.1rem;font-size:.75rem;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);background:var(--bg);border-bottom:1px solid var(--border);text-align:center;}
+.cmp-table th{padding:.9rem 1.1rem;font-size:.75rem;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);background:var(--bg2);border-bottom:1px solid var(--border);text-align:center;}
 .cmp-table th:first-child{text-align:left;}
-.cmp-table th.feat{color:var(--accent);background:rgba(0,102,255,.05);}
-.cmp-table td{padding:.8rem 1.1rem;font-size:.84rem;border-bottom:1px solid var(--border);text-align:center;color:var(--muted);}
+.cmp-table th.feat{color:var(--accent);background:rgba(77,142,255,.08);}
+.cmp-table td{padding:.8rem 1.1rem;font-size:.84rem;border-bottom:1px solid var(--border);text-align:center;color:var(--muted);background:var(--bg);}
 .cmp-table td:first-child{text-align:left;font-weight:600;color:var(--text);}
 .cmp-table tr:last-child td{border-bottom:none;}
-.cmp-table tr:hover td{background:var(--bg);}
+.cmp-table tr:hover td{background:var(--bg2);}
 .cmp-yes{color:var(--accent);font-weight:900;}
 .cmp-no{color:var(--border);}
 .cmp-val{font-weight:700;color:var(--text);}
@@ -186,15 +185,15 @@ h2.st{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-1px;m
 .cta-inner h2{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;letter-spacing:-1.5px;margin-bottom:.75rem;}
 .cta-inner p{color:rgba(255,255,255,.6);font-size:.97rem;margin-bottom:2rem;max-width:460px;margin-left:auto;margin-right:auto;}
 .cta-btns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:1.25rem;}
-.btn-cta-primary{background:#fff;color:var(--text);font-weight:900;padding:1rem 2.5rem;border-radius:10px;font-size:1rem;transition:.2s;box-shadow:0 8px 30px rgba(0,0,0,.3);}
-.btn-cta-primary:hover{transform:translateY(-2px);}
+.btn-cta-primary{background:#fff;color:#0A0E1A;font-weight:900;padding:1rem 2.5rem;border-radius:10px;font-size:1rem;transition:.2s;box-shadow:0 8px 30px rgba(0,0,0,.4);}
+.btn-cta-primary:hover{transform:translateY(-2px);background:#e6edf3;}
 .btn-cta-ghost{background:transparent;color:#fff;font-weight:700;padding:1rem 2rem;border-radius:10px;font-size:1rem;border:1.5px solid rgba(255,255,255,.3);transition:.2s;display:inline-flex;align-items:center;gap:.4rem;}
 .btn-cta-ghost:hover{border-color:rgba(255,255,255,.7);}
 .cta-deck-note{font-size:.8rem;color:rgba(255,255,255,.35);margin-top:.5rem;}
 .cta-deck-note a{color:rgba(255,255,255,.6);text-decoration:underline;text-underline-offset:3px;}
 
-footer{background:var(--text);padding:2.5rem 1.5rem;text-align:center;}
-footer p{color:rgba(255,255,255,.5);font-size:.82rem;}
+footer{background:#060910;padding:2.5rem 1.5rem;text-align:center;border-top:1px solid var(--border);}
+footer p{color:rgba(255,255,255,.4);font-size:.82rem;}
 footer a{color:var(--accent2);}
 
 @media(max-width:768px){
@@ -221,15 +220,15 @@ footer a{color:var(--accent2);}
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" style="background:#0D1117;">
   <div class="hero-bg-img"><img src="./images/hero.jpg" alt="AEC professionals"/></div>
   <div class="hero-badge">🏗️ June 6 · SFU Vancouver · ~100 AEC Professionals</div>
-  <h1>Reach the people<br><em>building the future of AEC.</em></h1>
-  <p class="hero-sub">A hands-on innovation sprint — <strong>not a conference.</strong> Real professionals, real conversations, real connections.</p>
+  <h1 style="color:#E6EDF3;">Reach the people<br><em style="color:#4D8EFF;">building the future of AEC.</em></h1>
+  <p class="hero-sub" style="color:#8B949E;">A hands-on innovation sprint — <strong style="color:#E6EDF3;">not a conference.</strong> Real professionals, real conversations, real connections.</p>
   <div class="hero-meta">
-    <div class="hero-meta-item"><span>📅</span><strong>June 6, 2026</strong></div>
-    <div class="hero-meta-item"><span>📍</span><strong>SFU Vancouver</strong></div>
-    <div class="hero-meta-item"><span>👥</span><strong>~100 Attendees</strong></div>
+    <div class="hero-meta-item" style="color:#8B949E;"><span>📅</span><strong style="color:#E6EDF3;">June 6, 2026</strong></div>
+    <div class="hero-meta-item" style="color:#8B949E;"><span>📍</span><strong style="color:#E6EDF3;">SFU Vancouver</strong></div>
+    <div class="hero-meta-item" style="color:#8B949E;"><span>👥</span><strong style="color:#E6EDF3;">~100 Attendees</strong></div>
   </div>
   <div class="hero-cta">
     <a href="#contact" class="btn-hero">Book a Sponsorship Call →</a>
@@ -251,9 +250,9 @@ footer a{color:var(--accent2);}
     </div>
     <div class="partner-bar">
       <span style="font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:600;">A collaboration between</span>
-      <img src="./images/logo-archipelago-light.png" alt="Archipelago" style="height:30px;object-fit:contain;"/>
-      <span style="color:var(--accent);font-weight:900;font-size:1.1rem;">×</span>
-      <img src="./images/logo-sfu-light.png" alt="Simon Fraser University" style="height:34px;object-fit:contain;"/>
+      <img src="https://raw.githubusercontent.com/otachaves/buildday/main/images/logo-archipelago-light.png" alt="Archipelago" style="height:30px;object-fit:contain;"/>
+      <span style="color:#4D8EFF;font-weight:900;font-size:1.1rem;">×</span>
+      <img src="https://raw.githubusercontent.com/otachaves/buildday/main/images/logo-sfu-light.png" alt="Simon Fraser University" style="height:34px;object-fit:contain;"/>
     </div>
   </div>
 </section>
@@ -266,36 +265,12 @@ footer a{color:var(--accent2);}
       <h2 class="st">This isn't logo placement.<br>It's targeted access.</h2>
     </div>
     <div class="why-grid">
-      <div class="why-item">
-        <div class="why-icon">🎯</div>
-        <h4>Direct access to 100 AEC professionals</h4>
-        <p>Every person in the room is an active practitioner — not a general audience.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">🌟</div>
-        <h4>Find your next hire</h4>
-        <p>Meet top talent actively building skills — before anyone else does.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">🤝</div>
-        <h4>Build real partnerships</h4>
-        <p>Connect with other sponsors and firms from the audience in a high-trust setting.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">🤖</div>
-        <h4>Bring your team to build</h4>
-        <p>Use BuildDay to develop an AI solution for your own company alongside the community.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">🚀</div>
-        <h4>Position your brand with AEC innovation</h4>
-        <p>Be seen where the industry is heading — not where it's been.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-icon">💬</div>
-        <h4>Curated connections within attendees</h4>
-        <p>Facilitated introductions and structured interactions — not random networking.</p>
-      </div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">🎯</div><h4 style="color:#E6EDF3;">Direct access to 100 AEC professionals</h4><p>Every person in the room is an active practitioner — not a general audience.</p></div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">🌟</div><h4 style="color:#E6EDF3;">Find your next hire</h4><p>Meet top talent actively building skills — before anyone else does.</p></div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">🤝</div><h4 style="color:#E6EDF3;">Build real partnerships</h4><p>Connect with other sponsors and firms from the audience in a high-trust setting.</p></div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">🤖</div><h4 style="color:#E6EDF3;">Bring your team to build</h4><p>Use BuildDay to develop an AI solution for your own company alongside the community.</p></div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">🚀</div><h4 style="color:#E6EDF3;">Position your brand with AEC innovation</h4><p>Be seen where the industry is heading — not where it's been.</p></div>
+      <div class="why-item" style="background:#1C2333;border-color:#30363D;"><div class="why-icon">💬</div><h4 style="color:#E6EDF3;">Curated connections within attendees</h4><p>Facilitated introductions and structured interactions — not random networking.</p></div>
     </div>
   </div>
 </section>
@@ -311,7 +286,7 @@ footer a{color:var(--accent2);}
     <div class="mom-track-wrap">
       <div class="mom-track" id="momTrack">
         <div class="mom-slide">
-          <img src="./images/moment-challenge.jpg" alt="Challenge sponsor"/>
+          <img src="https://raw.githubusercontent.com/otachaves/Buildday-sponsor/main/image/moment-challenge.jpg" alt="Challenge sponsor"/>
           <div class="mom-caption">
             <div class="mom-tag">Challenge Sponsor</div>
             <h3>Your real problem.<br>Solved by 8 AEC professionals.</h3>
@@ -319,7 +294,7 @@ footer a{color:var(--accent2);}
           </div>
         </div>
         <div class="mom-slide">
-          <img src="./images/moment-stage.jpg" alt="Speaking on stage"/>
+          <img src="https://raw.githubusercontent.com/otachaves/Buildday-sponsor/main/image/moment-stage.jpg" alt="Speaking on stage"/>
           <div class="mom-caption">
             <div class="mom-tag">Stage Time</div>
             <h3>A room that's actually listening.</h3>
@@ -327,7 +302,7 @@ footer a{color:var(--accent2);}
           </div>
         </div>
         <div class="mom-slide">
-          <img src="./images/moment-interview.jpg" alt="Post-event interview"/>
+          <img src="https://raw.githubusercontent.com/otachaves/Buildday-sponsor/main/image/moment-interview.jpg" alt="Post-event interview"/>
           <div class="mom-caption">
             <div class="mom-tag">Post-event Interview</div>
             <h3>Your story, told after the energy peaks.</h3>
@@ -335,7 +310,7 @@ footer a{color:var(--accent2);}
           </div>
         </div>
         <div class="mom-slide">
-          <img src="./images/moment-prizedraw.jpg" alt="Prize draw activation"/>
+          <img src="https://raw.githubusercontent.com/otachaves/Buildday-sponsor/main/image/moment-prizedraw.jpg" alt="Prize draw activation"/>
           <div class="mom-caption">
             <div class="mom-tag">Prize Draw Activation</div>
             <h3>Your brand. Center stage. Loud.</h3>
@@ -343,7 +318,7 @@ footer a{color:var(--accent2);}
           </div>
         </div>
         <div class="mom-slide">
-          <img src="./images/moment-celebration.jpg" alt="Celebration"/>
+          <img src="https://raw.githubusercontent.com/otachaves/Buildday-sponsor/main/image/moment-celebration.jpg" alt="Celebration"/>
           <div class="mom-caption">
             <div class="mom-tag">Networking Drinks</div>
             <h3>The best conversations happen after.</h3>
@@ -609,7 +584,9 @@ setInterval(momNext,5000);
 <footer>
   <p style="font-size:.95rem;font-weight:800;color:#fff;margin-bottom:.75rem;">BuildDay · June 6, 2026 · SFU Vancouver</p>
   <div style="display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1rem;">
-    <img src="./images/logo-archipelago.png" alt="Archipelago" style="height:28px;object-fit:contain;"/>
+    <img src="https://raw.githubusercontent.com/otachaves/buildday/main/images/logo-archipelago.png" alt="Archipelago" style="height:28px;object-fit:contain;"/>
+    <span style="color:rgba(255,255,255,.4);">×</span>
+    <img src="https://raw.githubusercontent.com/otachaves/buildday/main/images/logo-sfu.png" alt="Simon Fraser University" style="height:32px;object-fit:contain;"/>="height:32px;object-fit:contain;"/>="height:28px;object-fit:contain;"/>
     <span style="color:rgba(255,255,255,.4);">×</span>
     <img src="./images/logo-sfu.png" alt="Simon Fraser University" style="height:32px;object-fit:contain;"/>
   </div>
