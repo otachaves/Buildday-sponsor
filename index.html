@@ -78,14 +78,6 @@ h2.st{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.5vw,2.5rem
 .partner-bar{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);}
 .partner-label{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.4);font-weight:600;}
 
-/* WHY */
-.why-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;}
-.why-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;transition:.2s;}
-.why-card:hover{box-shadow:0 6px 24px rgba(0,102,255,.07);border-color:var(--blue-mid);}
-.why-card .ic{font-size:1.6rem;margin-bottom:.75rem;}
-.why-card h4{font-family:'Space Grotesk',sans-serif;font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.25rem;}
-.why-card p{font-size:.8rem;color:var(--muted);line-height:1.5;}
-
 /* EMOTIONAL */
 .emotional{background:var(--blue-light);border-top:1px solid var(--blue-mid);border-bottom:1px solid var(--blue-mid);padding:3.5rem 1.5rem;text-align:center;}
 .emotional-inner{max-width:640px;margin:0 auto;}
@@ -100,18 +92,6 @@ h2.st{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,3.5vw,2.5rem
 .aud-label{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:.2rem;color:var(--text);}
 .aud-desc{font-size:.8rem;color:var(--muted);line-height:1.5;}
 
-/* HOW */
-.how{background:var(--navy);padding:5rem 1.5rem;}
-.how-inner{max-width:860px;margin:0 auto;text-align:center;}
-.how-label{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:rgba(0,194,255,.8);margin-bottom:.6rem;}
-.how h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:3rem;}
-.how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
-.how-steps::before{content:'';position:absolute;top:24px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(to right,var(--blue),#00C2FF);opacity:.4;}
-.how-step{position:relative;z-index:1;padding:0 .5rem;text-align:center;}
-.how-num{width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 0 0 4px rgba(0,102,255,.2);}
-.how-step:last-child .how-num{background:linear-gradient(135deg,var(--blue),#00C2FF);}
-.how-step h4{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;color:#fff;margin-bottom:.3rem;line-height:1.3;}
-.how-step p{font-size:.75rem;color:rgba(255,255,255,.5);line-height:1.4;}
 
 /* CREDIBILITY */
 .cred-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem;}
@@ -197,7 +177,7 @@ footer p{color:rgba(255,255,255,.4);font-size:.8rem;}
 footer a{color:rgba(0,194,255,.7);}
 
 @media(max-width:768px){
-  .what-grid,.why-grid,.pkg-grid,.aud-grid{grid-template-columns:1fr;}
+  .what-grid,.pkg-grid,.aud-grid{grid-template-columns:1fr;}
   .cred-stats{grid-template-columns:1fr 1fr;}
   .how-steps{grid-template-columns:1fr 1fr;gap:1.5rem;}
   .how-steps::before{display:none;}
@@ -254,24 +234,6 @@ footer a{color:rgba(0,194,255,.7);}
   </div>
 </section>
 
-<!-- WHY SPONSOR -->
-<section class="section" style="background:#fff;">
-  <div class="section-inner">
-    <div style="margin-bottom:2.5rem;">
-      <div class="label">Why Sponsor</div>
-      <h2 class="st">This isn't logo placement.<br>It's targeted access.</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card"><div class="ic">🎯</div><h4>Direct access to 100 AEC professionals</h4><p>Every person in the room is an active practitioner — not a general audience.</p></div>
-      <div class="why-card"><div class="ic">🌟</div><h4>Find your next hire</h4><p>Meet top talent actively building skills — before anyone else does.</p></div>
-      <div class="why-card"><div class="ic">🤝</div><h4>Build real partnerships</h4><p>Connect with other sponsors and firms from the audience in a high-trust setting.</p></div>
-      <div class="why-card"><div class="ic">🤖</div><h4>Bring your team to build</h4><p>Use BuildDay to develop an AI solution for your own company alongside the community.</p></div>
-      <div class="why-card"><div class="ic">🚀</div><h4>Position your brand with AEC innovation</h4><p>Be seen where the industry is heading — not where it's been.</p></div>
-      <div class="why-card"><div class="ic">💬</div><h4>Curated connections within attendees</h4><p>Facilitated introductions and structured interactions — not random networking.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- EMOTIONAL -->
 <section class="emotional">
   <div class="emotional-inner">
@@ -297,19 +259,6 @@ footer a{color:rgba(0,194,255,.7);}
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="how">
-  <div class="how-inner">
-    <div class="how-label">How It Works</div>
-    <h2>From first conversation to lasting connection.</h2>
-    <div class="how-steps">
-      <div class="how-step"><div class="how-num">1</div><h4>Book a call</h4><p>Tell us your goals. We'll figure out what makes sense together.</p></div>
-      <div class="how-step"><div class="how-num">2</div><h4>We match a package</h4><p>We find the tier that fits your budget and objectives.</p></div>
-      <div class="how-step"><div class="how-num">3</div><h4>We build your activation</h4><p>Together we design how your brand shows up on the day.</p></div>
-      <div class="how-step"><div class="how-num">4</div><h4>Be remembered, not just seen</h4><p>Show up and walk away with real relationships.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- CREDIBILITY -->
 <section class="section" style="background:#fff;">
